@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import com.conghuy.example.databinding.MainFragmentBinding;
 import javax.inject.Inject;
 
@@ -27,10 +26,6 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-//        View v = inflater.inflate(R.layout.main_fragment, container, false);
-//        initView(v);
-//        return v;
-
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.main_fragment, container, false);
         View view = binding.getRoot();
@@ -41,10 +36,6 @@ public class MainFragment extends Fragment {
         initView();
 
         return view;
-
-//        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-//        binding.setLifecycleOwner(this);
-//        binding.setViewModel(viewModel);
     }
 
     private void initView() {
