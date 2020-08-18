@@ -2,11 +2,13 @@ package com.conghuy.example;
 
 import javax.inject.Inject;
 
-import dagger.Provides;
-
 public class NetworkApi {
+    public String name;
+    public int age;
     @Inject
     public NetworkApi() {
+        name = "Huy";
+        age = 10;
     }
 
 //    @Provides
